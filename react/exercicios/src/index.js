@@ -1,6 +1,14 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 
-const elemento = <h1>React 2</h1>
+// import Multiplos from './componentes/Multiplos'
+// import {BoaTarde, BoaNoite} from './componentes/Multiplos'
+import Saudacao from './componentes/Saudacao'
 
-ReactDom.render(elemento, document.getElementById('root'));
+ReactDom.render(
+    <div>
+        <Saudacao tipo="Bom dia" nome="Nathan" />
+        {/* <Multiplos.BoaTarde nome='Ana'/>
+        <Multiplos.BoaNoite nome='Ana'/> */}
+    </div>
+    , document.getElementById('root'));
